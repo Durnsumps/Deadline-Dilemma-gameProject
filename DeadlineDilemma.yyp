@@ -34,7 +34,11 @@
   },
   "name":"DeadlineDilemma",
   "resources":[
+    {"id":{"name":"FT_Cascadia","path":"fonts/FT_Cascadia/FT_Cascadia.yy",},},
+    {"id":{"name":"OBJ_Button","path":"objects/OBJ_Button/OBJ_Button.yy",},},
+    {"id":{"name":"OBJ_Game_Controller","path":"objects/OBJ_Game_Controller/OBJ_Game_Controller.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"SPR_Button","path":"sprites/SPR_Button/SPR_Button.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
