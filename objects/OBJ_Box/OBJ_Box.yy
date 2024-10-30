@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Button",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"OBJ_Box",
+  "eventList":[],
   "managed":true,
-  "name":"OBJ_Button",
+  "name":"OBJ_Box",
   "overriddenProperties":[],
   "parent":{
     "name":"Assets",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_Button",
-    "path":"sprites/SPR_Button/SPR_Button.yy",
+    "name":"SPR_Box",
+    "path":"sprites/SPR_Box/SPR_Box.yy",
   },
   "spriteMaskId":null,
   "visible":true,
