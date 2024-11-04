@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"OBJ_Box",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":37,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"OBJ_Box",
   "overriddenProperties":[],

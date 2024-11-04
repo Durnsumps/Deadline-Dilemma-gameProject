@@ -3,6 +3,20 @@
 event_inherited();
 
 if (buttonType == ButtonType.STATE1) {
+	OBJ_Button_control.buttonType = ButtonType.STATE2
+}
+else if (buttonType == ButtonType.STATE2) {
+	OBJ_Button_control.buttonType = ButtonType.STATE3
+	//Call the Minigame comtrol
+	//All buttons should go back to STATE1
+}
+else if (buttonType == ButtonType.STATE4) {
+	OBJ_Button_control.buttonType = ButtonType.STATE3
+	//Call the nap function
+	//All buttons should go back to STATE1
+}
+
+/*if (buttonType == ButtonType.STATE1) {
     buttonType = ButtonType.STATE2
 } else if (buttonType == ButtonType.STATE2) {
 	buttonType = ButtonType.STATE3
@@ -29,4 +43,4 @@ if (buttonType == ButtonType.STATE1) {
 	buttonType = ButtonType.STATE1;
 } else if (buttonType == ButtonType.STATE4) {\
 	buttonType = ButtonType.STATE1
-}
+}*/

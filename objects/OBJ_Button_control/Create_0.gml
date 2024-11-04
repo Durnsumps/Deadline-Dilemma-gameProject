@@ -6,5 +6,3 @@ enum ButtonType {
 	STATE3, //Invisible/Break Press
 	STATE4  //Sleep Press
 }
-
-buttonType = ButtonType.STATE1;
