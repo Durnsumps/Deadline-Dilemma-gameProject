@@ -2,8 +2,11 @@
 // You can write your code in this editor
 
 // The full text you want to display
-full_text = "This is the text that will be displayed in an RPG-style dialogue!";
+full_text = [
+	"This is the text that will be displayed in an RPG-style dialogue!"
+];
 
+segment = 0;
 // Keeps track of how much of `full_text` has been shown
 current_text = "";
 
