@@ -1,17 +1,25 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
 
 if (buttonType == ButtonType.STATE1) {
-	OBJ_Button_control.buttonType = ButtonType.STATE2
+	//Calls the homework state for each button
+	//Each button should be in the STATE2
+	buttonType = ButtonType.STATE2
+	OBJ_Button_Break.buttonType = ButtonType.STATE2;
+	OBJ_Button_Sleep.buttonType = ButtonType.STATE2;
 }
 else if (buttonType == ButtonType.STATE2) {
-	OBJ_Button_control.buttonType = ButtonType.STATE3
+	buttonType = ButtonType.STATE3
+	OBJ_Button_Break.buttonType = ButtonType.STATE3;
+	OBJ_Button_Sleep.buttonType = ButtonType.STATE3;
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
 }
 else if (buttonType == ButtonType.STATE4) {
-	OBJ_Button_control.buttonType = ButtonType.STATE3
+	buttonType = ButtonType.STATE3
+	OBJ_Button_Break.buttonType = ButtonType.STATE3;
+	OBJ_Button_Sleep.buttonType = ButtonType.STATE3;
 	//Call the nap function
 	//All buttons should go back to STATE1
 }
@@ -23,7 +31,7 @@ else if (buttonType == ButtonType.STATE4) {
 } else if (buttonType == ButtonType.STATE3) {
     // Behavior for STATE2
 	if(!is_typing)
-	{
+	{   
 		if (OBJ_Dialogue_controller.segment < array_length(OBJ_Dialogue_controller.full_text))
 		{
 			OBJ_Dialogue_controller.is_typing = true;
