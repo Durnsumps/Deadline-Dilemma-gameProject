@@ -47,6 +47,7 @@
     {"id":{"name":"OBJ_Dialogue_controller","path":"objects/OBJ_Dialogue_controller/OBJ_Dialogue_controller.yy",},},
     {"id":{"name":"OBJ_Game_Controller","path":"objects/OBJ_Game_Controller/OBJ_Game_Controller.yy",},},
     {"id":{"name":"OBJ_menu_controller","path":"objects/OBJ_menu_controller/OBJ_menu_controller.yy",},},
+    {"id":{"name":"OBJ_Minigame","path":"objects/OBJ_Minigame/OBJ_Minigame.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"id":{"name":"TitleRoom","path":"rooms/TitleRoom/TitleRoom.yy",},},
     {"id":{"name":"BG_Level","path":"sprites/BG_Level/BG_Level.yy",},},
