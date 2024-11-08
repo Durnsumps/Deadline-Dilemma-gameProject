@@ -6,7 +6,8 @@ event_inherited();
 
 switch (buttonType) {
     case ButtonType.STATE1:
-        visible = true// Draw button appearance for STATE1
+        button_text = "Homework";
+		visible = true// Draw button appearance for STATE1
         break;
 
     case ButtonType.STATE2:

@@ -7,6 +7,7 @@ event_inherited();
 switch (buttonType) {
     case ButtonType.STATE1:
         // Draw button appearance for STATE1
+		button_text = "Break";
 		visible = true
         break;
 
