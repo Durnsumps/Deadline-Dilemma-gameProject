@@ -13,3 +13,9 @@ draw_set_color(c_black)
 draw_set_color(c_white)
 draw_text(1100, 120, "Stats coming soon!")
 draw_set_color(c_black)
+
+
+
+draw_healthbar(1000, 80, 1200, 60, sleep_stat, c_black, c_red, c_green, 0, false, true)
+draw_healthbar(1000, 120, 1200, 100, social_stat, c_black, c_red, c_green, 0, false, true)
+draw_healthbar(1000, 160, 1200, 140, motive_stat, c_black, c_red, c_green, 0, false, true)
