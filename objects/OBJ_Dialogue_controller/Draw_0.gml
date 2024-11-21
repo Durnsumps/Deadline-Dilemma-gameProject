@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_text(x, y, current_text);
+if(is_typing){
+	draw_set_color(c_black);
+	draw_text(x, y, full_text[text_line]);
+}
