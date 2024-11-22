@@ -13,9 +13,10 @@ if (buttonType == ButtonType.STATE1) {
 		"Ahh, I am feeling refreshed."
 	];
 	OBJ_Game_Controller.motive_stat = 100;
-	if(OBJ_Game_Controller.time_stat == 12) {
+	if(OBJ_Game_Controller.time_stat == 11) {
+		OBJ_Game_Controller.time_stat = 12;
 		OBJ_Game_Controller.PM_or_AM = false;
-	} else if(OBJ_Game_Controller.time_stat == 13) {
+	} else if(OBJ_Game_Controller.time_stat == 12) {
 		OBJ_Game_Controller.time_stat = 1;
 	} else {
 		OBJ_Game_Controller.time_stat += 1;
@@ -29,9 +30,10 @@ else if (buttonType == ButtonType.STATE2) {
 	}
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
-		if(OBJ_Game_Controller.time_stat == 12) {
+	if(OBJ_Game_Controller.time_stat == 11) {
+		OBJ_Game_Controller.time_stat = 12;
 		OBJ_Game_Controller.PM_or_AM = false;
-	} else if(OBJ_Game_Controller.time_stat == 13) {
+	} else if(OBJ_Game_Controller.time_stat == 12) {
 		OBJ_Game_Controller.time_stat = 1;
 	} else {
 		OBJ_Game_Controller.time_stat += 1;
