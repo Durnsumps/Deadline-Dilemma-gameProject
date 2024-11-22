@@ -10,6 +10,10 @@ if (buttonType == ButtonType.STATE1) {
 else if (buttonType == ButtonType.STATE2) {
 	buttonType = ButtonType.STATE3
 	OBJ_Button_control.buttonType = ButtonType.STATE3;
+	OBJ_Game_Controller.motive_stat -= 20;
+	if(!OBJ_Game_Controller.PM_or_AM) {
+		OBJ_Game_Controller.sleep_stat -= 20;
+	}
 	
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
