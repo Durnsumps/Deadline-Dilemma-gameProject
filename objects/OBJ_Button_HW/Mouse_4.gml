@@ -10,13 +10,24 @@ if (buttonType == ButtonType.STATE1) {
 else if (buttonType == ButtonType.STATE2) {
 	buttonType = ButtonType.STATE3
 	OBJ_Button_control.buttonType = ButtonType.STATE3;
-	OBJ_Game_Controller.motive_stat -= 20;
+	if(OBJ_Game_Controller.motive_stat < 1) {
+		OBJ_Game_Controller.motive_stat = 0;
+	} else {
+		OBJ_Game_Controller.motive_stat -= 20;
+	}
 	if(!OBJ_Game_Controller.PM_or_AM) {
 		OBJ_Game_Controller.sleep_stat -= 20;
 	}
 	
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
+	if(OBJ_Game_Controller.time_stat == 12) {
+		OBJ_Game_Controller.PM_or_AM = false;
+	} else if(OBJ_Game_Controller.time_stat == 13) {
+		OBJ_Game_Controller.time_stat = 1;
+	} else {
+		OBJ_Game_Controller.time_stat += 1;
+	}
 }
 else if (buttonType == ButtonType.STATE4) {
 	OBJ_Button_control.buttonType = ButtonType.STATE3;
@@ -29,6 +40,14 @@ else if (buttonType == ButtonType.STATE4) {
 		"*RING*",
 		"Time to get back to homework."
 	];
+	
+	if(OBJ_Game_Controller.time_stat == 12) {
+		OBJ_Game_Controller.PM_or_AM = false;
+	} else if(OBJ_Game_Controller.time_stat == 13) {
+		OBJ_Game_Controller.time_stat = 1;
+	} else {
+		OBJ_Game_Controller.time_stat += 1;
+	}
 }
 
 /*if (buttonType == ButtonType.STATE1) {
