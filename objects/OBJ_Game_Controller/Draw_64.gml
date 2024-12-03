@@ -3,6 +3,8 @@
 if (!PM_or_AM)
 {
 	pmam = "am"
+} else {
+	pmam = "pm"
 }
 draw_set_font(FT_Cascadia)
 draw_set_halign(fa_center)
@@ -18,8 +20,14 @@ draw_healthbar(1000, 120, 1200, 100, motive_stat, c_black, c_red, c_green, 0, fa
 //draw_healthbar(1000, 140, 1200, 120, motive_stat, c_black, c_red, c_green, 0, false, true)
 
 draw_set_color(c_white)
-draw_text(1000, 150, "HW#1: ")
-draw_text(1000, 180, "HW#2: ")
-draw_text(1000, 210, "HW#3: ")
+draw_text(1000, 150, "HW#1: " + string(HW_1))
+draw_text(1000, 180, "HW#2: " + string(HW_2))
+draw_text(1000, 210, "HW#3: " + string(HW_3))
 draw_set_color(c_black)
 //draw_healthbar(1000, 200, 1200, 180, mind_stat, c_black, c_red, c_green, 0, false, true)
+if (game_State == -1) {
+	draw_text(500, 500, "Game Over")
+	draw_text(500, 530, "HW#1: " + string(HW_1) + "/ 100%")
+	draw_text(500, 550, "HW#2: " + string(HW_2) + "/ 100%")
+	draw_text(500, 570, "HW#3: " + string(HW_3) + "/ 100%")
+}

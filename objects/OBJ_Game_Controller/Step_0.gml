@@ -9,3 +9,13 @@ if(motive_stat == 0) {
 	];
 	motive_stat = 0.01
 }
+if(time_stat == 7 && !PM_or_AM) {
+	if(day_count == 7) {
+		game_State = -1;
+		alarm[0] = 15 * game_get_speed(gamespeed_fps)
+	} else {
+		day_count++;	
+	}
+	time_stat = 4;
+	PM_or_AM = true;
+}
