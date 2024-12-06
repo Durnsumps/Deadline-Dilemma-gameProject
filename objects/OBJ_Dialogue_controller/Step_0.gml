@@ -7,9 +7,7 @@ if (is_typing) {
 		} else {
 			is_typing = false;
 			text_line = 0;
-			OBJ_Button_Break.buttonType = ButtonType.STATE1;
-			OBJ_Button_HW.buttonType = ButtonType.STATE1;
-			OBJ_Button_Sleep.buttonType = ButtonType.STATE1;
+			OBJ_Button_control.buttonType = ButtonType.STATE1;
 		}
 	}
 }

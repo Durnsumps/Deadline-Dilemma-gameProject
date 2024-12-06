@@ -16,27 +16,29 @@ if(sleep_stat == 0) {
 		"I should go to bed.",
 		"*You proceed to bed for the day*."
 	];
-	
-	OBJ_Game_Controller.time_stat = 4;
-	OBJ_Game_Controller.PM_or_AM = true;
-	OBJ_Game_Controller.sleep_stat = 100;
-	OBJ_Game_Controller.motive_stat = 100;
-	OBJ_Game_Controller.day_count += 1;
+	time_stat = 4;
+	PM_or_AM = true;
+	sleep_stat = 100;
+	motive_stat = 100;
+	day_count += 1;
 }
-
-if(HW_1 == 100 || HW_2 == 100 || HW_3 == 100) {
-	OBJ_Dialogue_controller.is_typing = true;
-	OBJ_Dialogue_controller.full_text = [
-		"Aren't I already finished with this homework?"
-	];
+if(HW_1 == 100){
+	HW_1_Check = true;
+}
+if(HW_2 == 100){
+	HW_2_Check = true;
+}
+if(HW_3 == 100){
+	HW_3_Check = true;
 }
 
 if(time_stat == 7 && !PM_or_AM) {
 	if(day_count == 7) {
 		game_State = -1;
+		OBJ_Button_control.buttonType = ButtonType.STATE3;
 		alarm[0] = 15 * game_get_speed(gamespeed_fps)
 	} else {
-		day_count++;	
+		day_count++;
 	}
 	time_stat = 4;
 	PM_or_AM = true;

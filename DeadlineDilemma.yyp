@@ -52,6 +52,7 @@
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"id":{"name":"Splash_Intro","path":"rooms/Splash_Intro/Splash_Intro.yy",},},
     {"id":{"name":"TitleRoom","path":"rooms/TitleRoom/TitleRoom.yy",},},
+    {"id":{"name":"Music","path":"sounds/Music/Music.yy",},},
     {"id":{"name":"BG_Level","path":"sprites/BG_Level/BG_Level.yy",},},
     {"id":{"name":"BG_Splash","path":"sprites/BG_Splash/BG_Splash.yy",},},
     {"id":{"name":"BG_Title","path":"sprites/BG_Title/BG_Title.yy",},},

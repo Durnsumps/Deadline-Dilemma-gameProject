@@ -13,8 +13,21 @@ else if (buttonType == ButtonType.STATE2) {
 	}
 	//Call the Minigame comtrol for HW 3
 	//All buttons should go back to STATE1
+	if(OBJ_Game_Controller.HW_3 < 100) {	
+		OBJ_Game_Controller.HW_3 += 2
+	}
 	
-	OBJ_Game_Controller.HW_3 += 2
+	if(OBJ_Game_Controller.HW_3_Check) {
+	OBJ_Dialogue_controller.is_typing = true;
+	OBJ_Dialogue_controller.full_text = [
+		"Aren't I already finished with this homework?"
+	];
+	} else {
+	OBJ_Dialogue_controller.is_typing = true;
+	OBJ_Dialogue_controller.full_text = [
+		"You do Homework #3."
+	];
+	}
 	
 	if(OBJ_Game_Controller.time_stat == 11) {
 		OBJ_Game_Controller.time_stat = 12;
