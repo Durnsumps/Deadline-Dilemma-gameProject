@@ -30,6 +30,9 @@ else if (buttonType == ButtonType.STATE2) {
 	}
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
+	
+	OBJ_Game_Controller.HW_2 += 5
+	
 	if(OBJ_Game_Controller.time_stat == 11) {
 		OBJ_Game_Controller.time_stat = 12;
 		OBJ_Game_Controller.PM_or_AM = false;

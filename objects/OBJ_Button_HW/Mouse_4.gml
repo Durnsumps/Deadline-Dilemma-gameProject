@@ -21,6 +21,9 @@ else if (buttonType == ButtonType.STATE2) {
 	
 	//Call the Minigame comtrol
 	//All buttons should go back to STATE1
+	
+	OBJ_Game_Controller.HW_1 += 10;
+	
 	if(OBJ_Game_Controller.time_stat == 11) {
 		OBJ_Game_Controller.time_stat = 12;
 		OBJ_Game_Controller.PM_or_AM = false;
@@ -53,32 +56,3 @@ else if (buttonType == ButtonType.STATE4) {
 		OBJ_Game_Controller.time_stat += 1;
 	}
 }
-
-/*if (buttonType == ButtonType.STATE1) {
-    buttonType = ButtonType.STATE2
-} else if (buttonType == ButtonType.STATE2) {
-	buttonType = ButtonType.STATE3
-} else if (buttonType == ButtonType.STATE3) {
-    // Behavior for STATE2
-	if(!is_typing)
-	{   
-		if (OBJ_Dialogue_controller.segment < array_length(OBJ_Dialogue_controller.full_text))
-		{
-			OBJ_Dialogue_controller.is_typing = true;
-			OBJ_Dialogue_controller.current_text = ""; // Reset displayed text
-			OBJ_Dialogue_controller.char_index = 0; // Reset character index
-		} 
-	} else if (OBJ_Dialogue_controller.segment < array_length(OBJ_Dialogue_controller.full_text) - 1)
-	{
-		OBJ_Dialogue_controller.segment++;
-		OBJ_Dialogue_controller.is_typing = true;
-		OBJ_Dialogue_controller.current_text = ""; // Reset displayed text
-		OBJ_Dialogue_controller.char_index = 0; // Reset character index
-	} else
-	{
-		OBJ_Dialogue_controller.is_typing = false;
-	}
-	buttonType = ButtonType.STATE1;
-} else if (buttonType == ButtonType.STATE4) {\
-	buttonType = ButtonType.STATE1
-}*/
